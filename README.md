@@ -10,8 +10,7 @@ The code package has the following portals:
 XEnsemble now support four datasets: MNIST, CIFAR-10, ImageNet and LFW.
 
 ## How to run 
-1. 
-python>=3.6, 
+1. python>=3.6, 
 ensorflow-gpu==1.14.0,
 keras==2.2.4,
 numpy==1.13.3,
@@ -23,6 +22,7 @@ click,
 future,
 opencv-python,
 tinydb
+
 2. main_attack_portal.py: please read the ppt file for more details of attacks.
 
 ```
