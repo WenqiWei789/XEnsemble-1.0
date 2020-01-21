@@ -25,7 +25,7 @@ opencv-python,
 tinydb
 2. main_attack_portal.py: please read the ppt file for more details of attacks.
 
-'''
+```
 python main_attack_portal.py --dataset_name MNIST --model_name CNN1 --attacks
 "fgsm?eps=0.3;bim?eps=0.3&eps_iter=0.06;deepfool?overshoot=10;pgdli?eps=0.3;
 fgsm?eps=0.3&targeted=most;fgsm?eps=0.3&targeted=next;fgsm?eps=0.3&targeted=ll;
@@ -44,20 +44,20 @@ carlinil0?targeted=ll&batch_size=1&max_iterations=1000&confidence=10;
 jsma?targeted=most;
 jsma?targeted=next;
 jsma?targeted=ll;"
-'''
+```
 3. input_denoising_portal.py: please read the ppt file for more details of the available input denoising method.
-'''
+```
 python input_denoising_portal.py --dataset_name MNIST --model_name CNN1 --attacks "fgsm?eps=0.3" --input_verifier "bit_depth_1;median_filter_2_2;rotation_-6"
-'''
+```
 4. cross_layer_defense.py:please read the ppt file for more details of available choice of models. More diversity ensemble details can be found in the paper.
-'''
+```
 python cross_layer_defense.py --dataset_name MNIST --model_name cnn1 --attacks "fgsm?eps=0.3" --input_verifier "bit_depth_1;median_filter_2_2;rotation_-6" --output_verifier "cnn2;cnn1_half;cnn1_double;cnn1_30;cnn1_40"
-'''
+```
 
 5. detection_only_comparison.py: please read feature squeezing, MagNet, and LID papers for implementation details.
-'''
+```
 python detection_only_comparison.py --dataset_name MNIST --model_name CNN1 --attacks "fgsm?eps=0.3;bim?eps=0.3&eps_iter=0.06;carlinili?targeted=next&batch_size=1&max_iterations=1000&confidence=10;carlinili?targeted=ll&batch_size=1&max_iterations=1000&confidence=10;carlinil2?targeted=next&batch_size=100&max_iterations=1000&confidence=10;carlinil2?targeted=ll&batch_size=100&max_iterations=1000&confidence=10;carlinil0?targeted=next&batch_size=1&max_iterations=1000&confidence=10;carlinil0?targeted=ll&batch_size=1&max_iterations=1000&confidence=10;jsma?targeted=next;jsma?targeted=ll;" --detection "FeatureSqueezing?squeezers=bit_depth_1&distance_measure=l1&fpr=0.05;FeatureSqueezing?squeezers=bit_depth_2&distance_measure=l1&fpr=0.05;FeatureSqueezing?squeezers=bit_depth_1,median_filter_2_2&distance_measure=l1&fpr=0.05;MagNet"
-'''
+```
                  
 
 ## XEnsemble project
