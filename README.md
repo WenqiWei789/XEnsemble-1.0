@@ -1,11 +1,13 @@
 ## Introduction
 XEnsemble is an advanced robust deep learning package that can defend both adversarial examples and out-of-distribution input(to-be-updated). The intuition behind is the input and model divergence of these attack inputs[1,5]. 
 
+<!--
 The code package has the following portals:
 1. The attack portal(main_attack_portal.py): generate and save adversarial examples.
 2. The input denoising robust prediction portal(input_denoising_portal.py): given an input, generate multiple denoised variants and feed them to the target model for prediction.
 3. The input-model cross-layer defense portal(cross_layer_defense.py): given an input, generate multiple denoised variants and feed them to multiple diverse models for prediction.(detailed generation of diverse models can be found in [2,4]). We also compare our performance with four adversarial defenses: adversarial training, defensive distillation, input transformation ensemble as provided in the paper.
 4. Comparison portal with detection-only adversarial defenses(detection_only_comparison.py): generate defense results of Feature Squeezing, MagNet, and LID. 
+--!>
 
 XEnsemble now supports four datasets: MNIST, CIFAR-10, ImageNet and LFW.
 
@@ -108,7 +110,4 @@ We have another two papers under review.
 ```
 
 ## Special Acknowledgement
-The code package is built on top of the EvadeML. We specially thank the authors in [7].
-
-[7]  W. Xu, D. Evans, and Y. Qi, “Feature Squeezing: Detecting Adversarial Examples in Deep Neural Networks,” in
-Proceedings of the 2018 Network and Distributed Systems Security Symposium (NDSS), 2018
+The code package is built on top of the EvadeML. We specially thank the authors. We also thank authors in Cleverhans, Carlini&Wagner attacks, PGD attacks, MagNet, universal(and DeepFool) attacks, keras models and those impletmented neural network models with trained weights.
