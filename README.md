@@ -7,7 +7,7 @@ The code package has the following portals:
 2. The input denoising robust prediction portal(input_denoising_portal.py): given an input, generate multiple denoised variants and feed them to the target model for prediction.
 3. The input-model cross-layer defense portal(cross_layer_defense.py): given an input, generate multiple denoised variants and feed them to multiple diverse models for prediction.(detailed generation of diverse models can be found in [2,4]). We also compare our performance with four adversarial defenses: adversarial training, defensive distillation, input transformation ensemble as provided in the paper.
 4. Comparison portal with detection-only adversarial defenses(detection_only_comparison.py): generate defense results of Feature Squeezing, MagNet, and LID. 
---!>
+-->
 
 XEnsemble now supports four datasets: MNIST, CIFAR-10, ImageNet and LFW.
 
